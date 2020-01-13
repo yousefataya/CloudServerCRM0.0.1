@@ -1,0 +1,505 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>35d2d38d-e1bb-4492-bebe-8ab80699ac5d</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectTypeGuids>{1b580a1a-fdb3-4b32-83e1-6407eb2722e6};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <StartupFile>
+    </StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <LaunchProvider>Web launcher</LaunchProvider>
+    <WebBrowserUrl>http://localhost</WebBrowserUrl>
+    <OutputPath>.</OutputPath>
+    <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
+    <Name>WebProjectMLRGU</Name>
+    <RootNamespace>WebProjectMLRGU</RootNamespace>
+    <InterpreterId>MSBuild|env|$(MSBuildProjectFullPath)</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Core\ActiveMQ\" />
+    <Folder Include="Core\Akka\" />
+    <Folder Include="Core\DDD\" />
+    <Folder Include="Core\Redis\" />
+    <Folder Include="Core\Saml\" />
+    <Folder Include="Core\Zookeeper\" />
+    <Folder Include="Entities\Accounting\bugets\" />
+    <Folder Include="Entities\Accounting\costing\" />
+    <Folder Include="Entities\Accounting\invoice\" />
+    <Folder Include="Entities\Accounting\ledger\" />
+    <Folder Include="Entities\Accounting\LoggerInfo\" />
+    <Folder Include="Entities\Accounting\payroles\" />
+    <Folder Include="Entities\Accounting\receviable\" />
+    <Folder Include="Entities\Accounting\revenue\" />
+    <Folder Include="Entities\Employee\" />
+    <Folder Include="Entities\employee\contact\" />
+    <Folder Include="Entities\employee\employeeinfo\" />
+    <Folder Include="Entities\employee\Gender\" />
+    <Folder Include="Entities\employee\LoggerInfo\" />
+    <Folder Include="Entities\employee\management\" />
+    <Folder Include="Entities\employee\management\customer\" />
+    <Folder Include="Entities\employee\management\cash\" />
+    <Folder Include="Entities\employee\management\contract\" />
+    <Folder Include="Entities\employee\management\currency\" />
+    <Folder Include="Entities\employee\management\LoggerInfo\" />
+    <Folder Include="Entities\employee\management\organization\" />
+    <Folder Include="Entities\employee\management\partner\" />
+    <Folder Include="Entities\employee\management\product\" />
+    <Folder Include="Entities\Erp\bank\" />
+    <Folder Include="Entities\Erp\bank\Account\" />
+    <Folder Include="Entities\Erp\bank\Credit\" />
+    <Folder Include="Entities\Erp\bank\Debit\" />
+    <Folder Include="Entities\Erp\bank\LoggerInfo\" />
+    <Folder Include="Entities\Erp\bank\Services\" />
+    <Folder Include="Entities\Erp\bank\Transactions\" />
+    <Folder Include="Entities\Hr\" />
+    <Folder Include="Entities\Accounting\" />
+    <Folder Include="Entities\Erp\" />
+    <Folder Include="Entities\Hr\absence\" />
+    <Folder Include="Entities\Hr\appointment\" />
+    <Folder Include="Entities\Hr\contact\" />
+    <Folder Include="Entities\Hr\contract\" />
+    <Folder Include="Entities\Hr\docs\" />
+    <Folder Include="Entities\Hr\evaluations\" />
+    <Folder Include="Entities\Hr\experinces\" />
+    <Folder Include="Entities\Hr\jira\" />
+    <Folder Include="Entities\Hr\leadersships\" />
+    <Folder Include="Entities\Hr\leave\" />
+    <Folder Include="Entities\Hr\LoggerInfo\" />
+    <Folder Include="Entities\Hr\meeting\" />
+    <Folder Include="Entities\Hr\performance\" />
+    <Folder Include="Entities\Hr\shifting\" />
+    <Folder Include="Entities\Hr\skills\" />
+    <Folder Include="Entities\Hr\timesheet\" />
+    <Folder Include="Entities\Hr\transactions\" />
+    <Folder Include="Entities\Hr\vactions\" />
+    <Folder Include="Entities\Lookups\" />
+    <Folder Include="ML\" />
+    <Folder Include="Core\" />
+    <Folder Include="MVC\" />
+    <Folder Include="Models\" />
+    <Folder Include="Entities\" />
+    <Folder Include="Security\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="requirements.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Core\ActiveMQ\BankInfo.py" />
+    <Compile Include="Core\Akka\BankInfo.py" />
+    <Compile Include="Core\DDD\BankInfo.py" />
+    <Compile Include="Core\Redis\BankInfo.py" />
+    <Compile Include="Core\Saml\BankInfo.py" />
+    <Compile Include="Core\Zookeeper\BankInfo.py" />
+    <Compile Include="Entities\Accounting\bugets\BankInfo.py" />
+    <Compile Include="Entities\Accounting\costing\BankInfo.py" />
+    <Compile Include="Entities\Accounting\invoice\BankInfo.py" />
+    <Compile Include="Entities\Accounting\ledger\BankInfo.py" />
+    <Compile Include="Entities\Accounting\LoggerInfo\BankInfo.py" />
+    <Compile Include="Entities\Accounting\payroles\BankInfo.py" />
+    <Compile Include="Entities\Accounting\receviable\BankInfo.py" />
+    <Compile Include="Entities\Accounting\revenue\BankInfo.py" />
+    <Compile Include="Entities\BankInfo.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\employee\contact\BankInfo.py" />
+    <Compile Include="Entities\employee\employeeinfo\BankInfo.py" />
+    <Compile Include="Entities\employee\Gender\BankInfo.py" />
+    <Compile Include="Entities\employee\LoggerInfo\BankInfo.py" />
+    <Compile Include="Entities\employee\management\cash\CashInfo.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\employee\management\cash\CashType.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\employee\management\cash\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\employee\management\contract\ContractType.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\employee\management\contract\CustomerContractInfo.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\employee\management\contract\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\employee\management\currency\CurrencyInfo.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\employee\management\currency\CurrencySympole.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\employee\management\currency\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\employee\management\customer\CustomerInfo.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\employee\management\customer\CustomerType.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\employee\management\customer\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\employee\management\LoggerInfo\LoggerType.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\employee\management\LoggerInfo\ManagementLoggerInfo.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\employee\management\LoggerInfo\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\employee\management\organization\OrganizationIndustry.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\employee\management\organization\OrganizationMainInfo.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\employee\management\organization\OrganizationType.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\employee\management\organization\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\employee\management\partner\PartnerInfo.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\employee\management\partner\PartnerType.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\employee\management\partner\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\employee\management\product\ProductInfo.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\employee\management\product\ProductType.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\employee\management\product\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\employee\management\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\Erp\bank\Account\AccountCatogry.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\Erp\bank\Account\AccountInfo.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\Erp\bank\Account\AccountType.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\Erp\bank\Account\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\Erp\bank\Credit\CreditByAccount.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\Erp\bank\Credit\CreditCatogry.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\Erp\bank\Credit\CreditCurrencyInfo.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\Erp\bank\Credit\CreditType.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\Erp\bank\Credit\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\Erp\bank\Debit\DebitByAccount.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\Erp\bank\Debit\DebitCatogry.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\Erp\bank\Debit\DebitCurrencyInfo.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\Erp\bank\Debit\DebitType.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\Erp\bank\Debit\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\Erp\bank\LoggerInfo\BankLoggerInfo.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\Erp\bank\LoggerInfo\LoggerType.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\Erp\bank\LoggerInfo\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\Erp\bank\Services\BankServicesInfo.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\Erp\bank\Services\ServiceCatogry.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\Erp\bank\Services\ServiceClazz.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\Erp\bank\Services\ServiceType.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\Erp\bank\Services\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\Erp\bank\Transactions\BankTransaction.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\Erp\bank\Transactions\TransactionType.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\Erp\bank\Transactions\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\Erp\bank\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\Hr\absence\AbsenceCatogry.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\Hr\absence\AbsenceInfo.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\Hr\absence\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\Hr\appointment\AppointmentCatogry.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\Hr\appointment\AppoiontmentInfo.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\Hr\appointment\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\Hr\contact\ContactCatogry.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\Hr\contact\ContactInfo.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\Hr\contact\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\Hr\contract\ContractCatogry.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\Hr\contract\ContractInfo.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\Hr\contract\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\Hr\docs\DocInfoCatogry.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\Hr\docs\EmployeeDocsInfo.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\Hr\docs\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\Hr\evaluations\EmployeeEvaluation.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\Hr\evaluations\EvaluationCatogry.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\Hr\evaluations\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\Hr\experinces\EmployeeExperinces.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\Hr\experinces\ExperincesCatogry.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\Hr\experinces\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\Hr\jira\EmployeeJiraInfo.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\Hr\jira\JiraCatogry.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\Hr\jira\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\Hr\leadersships\DepartmentTeam.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\Hr\leadersships\TeamCatogry.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\Hr\leadersships\TeamInfo.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\Hr\leadersships\TeamMembersInfo.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\Hr\leadersships\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\Hr\leave\EmployeeLeaveInfo.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\Hr\leave\LeaveCatogry.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\Hr\leave\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\Hr\LoggerInfo\LoggerCatogry.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\Hr\LoggerInfo\LoggerMainInfo.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\Hr\LoggerInfo\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\Hr\meeting\MeetingCatogry.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\Hr\meeting\MeetingInfo.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\Hr\meeting\MeetingMember.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\Hr\meeting\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\Hr\performance\EmployeePerformance.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\Hr\performance\PerformanceCatogry.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\Hr\performance\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\Hr\shifting\ShiftingByDepartment.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\Hr\shifting\ShiftingByTeam.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\Hr\shifting\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\Hr\skills\EmployeeSkillInfo.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\Hr\skills\SkillCatogry.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\Hr\skills\SkillType.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\Hr\skills\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\Hr\timesheet\EmployeeTimeSheet.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\Hr\timesheet\TimesheetCatogry.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\Hr\timesheet\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\Hr\transactions\EmployeeTransactions.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\Hr\transactions\TransactionCatogry.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\Hr\transactions\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\Hr\vactions\EmployeeVacation.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\Hr\vactions\VacationCatogry.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\Hr\vactions\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\Hr\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="env\">
+      <Id>env</Id>
+      <Version>3.7</Version>
+      <Description>env (Python 3.7 (64-bit))</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X64</Architecture>
+    </Interpreter>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Web.targets" />
+  <!-- Specify pre- and post-build commands in the BeforeBuild and 
+       AfterBuild targets below. -->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <AutoAssignPort>True</AutoAssignPort>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
